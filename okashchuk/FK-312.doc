@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#FK-312] Incorrect error message in &quot;subscribing for notify&quot; field after entering invalid email address</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('http://lab.forteknowledge.com:8080/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [FK-312]&nbsp;<a href="http://lab.forteknowledge.com:8080/browse/FK-312">Incorrect error message in &quot;subscribing for notify&quot; field after entering invalid email address</a>
+            <span class="subText">
+               Created: 21/May/20                   &nbsp;Updated: 24/May/20
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="http://lab.forteknowledge.com:8080/secure/BrowseProject.jspa?id=10000">Forte Knowledge</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Low
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="Oleh Kashchuk" id="word_reporter_Oleh Kashchuk" href="http://lab.forteknowledge.com:8080/secure/ViewProfile.jspa?name=Oleh+Kashchuk">Oleh Kashchuk</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="Nazar Dovhoshyya" id="word_assignee_Nazar Dovhoshyya" href="http://lab.forteknowledge.com:8080/secure/ViewProfile.jspa?name=Nazar+Dovhoshyya">Nazar Dovhoshyya</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10312-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Environment:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>macOS Catalina 10.15.3 (19B68f),</p>
+
+<p>Google Chrome  <em>81.0.4044.138</em> (Official <em>Build</em>) (64-bit) </p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="http://lab.forteknowledge.com:8080/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    21 May, 2020 - Loom Recording (1).mp4 &nbsp;&nbsp;&nbsp;
+                                    <img src="http://lab.forteknowledge.com:8080/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    Снимок экрана 2020-05-21 в 21.28.16.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue Links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Relates</b><br/>
+                            </td>
+                        </tr>
+                                                                <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="http://lab.forteknowledge.com:8080/browse/FK-255">
+                     FK-255                 </a>
+            </td>
+            <td>
+                The field doesn&#39;t accept incorrect email
+            </td>
+            <td>
+                To Do
+            </td>
+        </tr>
+                                        </table>
+            </td>
+        </tr>
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Preconditions:</b></p>
+
+<p>User is on product listing page</p>
+
+<p><b>Steps to reproduce:</b></p>
+<ol>
+	<li>Find a product that isn`t in stock</li>
+	<li>Click "Quick view" button</li>
+	<li>Enter any symbol in the Email field</li>
+	<li>Press "Notify Me When in Stock" button</li>
+	<li>Take a look at the error message</li>
+</ol>
+
+
+<p><b>Actual result:</b> "The message "You're already subscribed. We'll email you when this item is available." displayed</p>
+
+<p><b>Expected result:</b> The message "An email address is entered incorrectly" displayed</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-10103"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="Nazar Dovhoshyya" id="word_commented_Nazar Dovhoshyya" href="http://lab.forteknowledge.com:8080/secure/ViewProfile.jspa?name=Nazar+Dovhoshyya">Nazar Dovhoshyya</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">24/May/20</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-10103"><td bgcolor="#ffffff">
+            <p>Hi <a href="http://lab.forteknowledge.com:8080/secure/ViewProfile.jspa?name=Oleh+Kashchuk" class="user-hover" rel="Oleh Kashchuk">Oleh Kashchuk</a></p>
+
+<p>1) You haven't specified the website under the test. You might work on a project with multiple websites/environments and this info would be crucial.</p>
+
+<p>2) Summary is not really clear. Don't use invalid field names such as "subscribing for notify". It is not clear what are you referring to.</p>
+        </td></tr>
+            </table>
+Generated at Sat May 30 18:42:10 EEST 2020 by Oleh Kashchuk using Jira 8.5.4#805004-sha1:0444eab799707f9ad7b248d69f858774aadfd250.
+
+</body>
+</html>
