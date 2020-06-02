@@ -1,0 +1,135 @@
+
+var express = require('express');
+var path = require('path');
+var http = require('http');
+var config = require('./config/index');
+var log = require('./libs/log')(module);
+var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+
+var User = require('./models/user');
+var Word = require('./models/word');
+var Test = require('./models/test');
+
+var app = express();
+
+app.engine('ejs', require('ejs-locals'));
+http.createServer(app).listen(config.get('port'), function(){
+    log.info('Express server listening on port: ' + config.get('port'));
+    log.info(app.get('env'));
+});
+
+app.set('views', path.join(__dirname, 'templates'));
+app.set('view engine', 'ejs');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+var uParser = bodyParser.urlencoded({extended: false});
+app.use(bodyParser.json());
+
+app.use(cookieParser());
+
+
+
+// Middlewares on actions
+app.get('/', function(req, res, next) {
+  res.render('index', {
+  });
+});
+
+app.get('/users', function(req, res, next) {
+ User.find({}, function(err, users) {
+ if (err) throw next(err);
+ res.json(users);
+  });
+   });
+
+app.get('/finde', uParser, function(req, res, next) {
+  res.render('finde', {
+  });
+});
+
+app.post('/finde', uParser, function(req, res, next) {
+ if(!req.body) return res.sendStatus(400);
+    console.log(req.body);
+    console.log(req.body.request , typeof(req.body.request));
+
+    Word.findOne({name: req.body.request}, function(err, answer) {
+     if (err) throw next(err);
+      console.log(answer);
+      res.send(`${req.body.request} founded : ${answer}`);
+     });
+});
+
+
+app.post('/search', uParser, function(req, res, next) {
+ if(!req.body) return res.sendStatus(400);
+    console.log(req.body);
+    console.log(req.body.message , typeof(req.body.message));
+
+    Word.findOne({name: req.body.message}, function(err, answer) {
+     if (!answer) return res.status(404).send({ error: `We cannot find ${req.body.message} word in library .... -_-`});
+     if (err) throw next(err);
+      console.log(answer);
+      res.send(`${req.body.message} founded : - ${answer.get_description}`);
+     });
+});
+
+app.post('/tt', uParser, function(req, res, next) {
+ var time1 = new Date();
+ if(!req.body) return res.sendStatus(400);
+    log.info(req.body);
+    log.info(req.body.tt , typeof(req.body.tt));
+
+    Test.findOne({name1: req.body.tt}, function(err, answer) {
+     if (err) throw next(err);
+      console.log(answer);
+      var time2 = new Date();
+      time1 = time2 - time1;
+      res.send(`${req.body.tt} founded : ${answer} whis time - ${time1} ms..`);
+     });
+});
+
+
+// catch error and forward to error handler
+app.use(function(err, req, res, next) {
+  log.info(err.stack);
+  res.status(500).send('Wooops something broke')
+});
+
+/**
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
+
+/**
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+
+**/
+
+// view engine setup
+//app.set('views', path.join(__dirname, 'views'));
+//app.set('view engine', 'ejs');
+/**
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+
+
+
+module.exports = app;
+**/
+
+module.exports = app;
